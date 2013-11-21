@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/3.8">
+<application xmlns="http://ns.adobe.com/air/application/3.9">
   <id>me.rainssong.$(PROJECTNAME)</id>
   <versionNumber>1.0</versionNumber>
-  <supportedProfiles>mobileDevice</supportedProfiles>
+  <supportedProfiles>extendedDesktop mobileDevice</supportedProfiles>
   <filename>$(PROJECTID)</filename>
   <name>
 		<text xml:lang="en">$(PROJECTNAME)</text>
@@ -48,16 +48,30 @@
     <autoOrients>true</autoOrients>
   </initialWindow>
   <icon>
-		<!--iphone-->
-		<image29x29>icons/Icon-Small.png</image29x29>
-		<image58x58>icons/Icon-Small@2x.png</image58x58>
-		<image57x57>icons/Icon.png</image57x57>
-		<image114x114>icons/Icon@2x.png</image114x114>
-		<!--ipad-->
-		<image50x50>icons/Icon-Small-50.png</image50x50>
-		<image100x100>icons/Icon-Small-50@2x.png</image100x100>
-		<image72x72>icons/Icon-72.png</image72x72>
-		<image144x144>icons/Icon-72@2x.png</image144x144>
+		<!--iphone ios6-->
+		<image57x57>Icon.png</image57x57>
+		<image114x114>Icon@2x.png</image114x114>
+		<!--iphone ios7-->
+		<image120x120>Icon-Iphone-120.png</image120x120>
+
+		<!--ipad ios6-->
+		<image72x72>Icon-Large.png</image72x72>
+		<image144x144>Icon@2x-Large.png</image144x144>
+		<!--ipad ios7-->
+		<image76x76>Icon-Ipad-76.png</image76x76>
+		<image152x152>Icon-Ipad-152.png</image152x152>
+
+		<!--setting recommanded-->
+		<!--<image29x29>Icon-Small.png</image29x29>
+		<image58x58>Icon-Small@2x.png</image58x58>-->
+
+		<!--spotlight ios6 recommanded-->
+		<!--<image50x50>Icon-Small-50.png</image50x50>
+		<image100x100>Icon-Small-50@2x.png</image100x100>-->
+
+		<!--spotlight ios7 recommanded-->
+		<!--<image40x40>Icon-Small-402.png</image40x40>
+		<image80x80>Icon-Small-802.png</image80x80>-->
   </icon>
   <!-- 
 	AIR options:
