@@ -49,29 +49,29 @@
   </initialWindow>
   <icon>
 		<!--iphone ios6-->
-		<image57x57>Icon-57.png</image57x57>
-		<image114x114>Icon-57@2x.png</image114x114>
+		<image57x57>icons/Icon-57.png</image57x57>
+		<image114x114>icons/Icon-57@2x.png</image114x114>
 		<!--iphone ios7-->
-		<image120x120>Icon-120.png</image120x120>
+		<image120x120>icons/Icon-120.png</image120x120>
 
 		<!--ipad ios6-->
-		<image72x72>Icon-72.png</image72x72>
-		<image144x144>Icon-72@2x.png</image144x144>
+		<image72x72>icons/Icon-72.png</image72x72>
+		<image144x144>icons/Icon-72@2x.png</image144x144>
 		<!--ipad ios7-->
-		<image76x76>Icon-76.png</image76x76>
-		<image152x152>Icon-76@2x.png</image152x152>
+		<image76x76>icons/Icon-76.png</image76x76>
+		<image152x152>icons/Icon-76@2x.png</image152x152>
 
 		<!--setting recommanded-->
-		<!--<image29x29>Icon-29.png</image29x29>
-		<image58x58>Icon-29@2x.png</image58x58>-->
+		<!--<image29x29>icons/Icon-29.png</image29x29>
+		<image58x58>icons/Icon-29@2x.png</image58x58>-->
 
 		<!--spotlight ios6 recommanded-->
-		<!--<image50x50>Icon-50.png</image50x50>
-		<image100x100>Icon-50@2x.png</image100x100>-->
+		<!--<image50x50>icons/Icon-50.png</image50x50>
+		<image100x100>icons/Icon-50@2x.png</image100x100>-->
 
 		<!--spotlight ios7 recommanded-->
-		<!--<image40x40>Icon-40.png</image40x40>
-		<image80x80>Icon-40@2x.png</image80x80>-->
+		<!--<image40x40>icons/Icon-40.png</image40x40>
+		<image80x80>icons/Icon-40@2x.png</image80x80>-->
   </icon>
   <!-- 
 	AIR options:
