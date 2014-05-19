@@ -11,6 +11,7 @@
 7.提供ClearUp.bat用来将src下的同步资源文件到bin
 8.附带本人的测试用provision和key文件（非开发机越狱后方可用）。
 9.支持打包exe和bundle
+10.自动获取IP
 
 使用方法：
 将模板文件夹放到FlashDevelop\Projects\
