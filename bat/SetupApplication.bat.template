@@ -30,6 +30,7 @@ set IOS_DIST_SIGNING_OPTIONS=-storetype pkcs12 -keystore "%IOS_DIST_CERT_FILE%" 
 set APP_XML=application.xml
 set APP_PACKAGE_XML=%APP_XML%
 
+
 :: Files to package
 set APP_DIR=bin
 set EXT_DIR=lib
