@@ -52,12 +52,12 @@ echo Packaging: %OUTPUT%
 echo using certificate: %CERT_FILE%...
 echo.
 if "%PLATFORM%"=="desktop" (
-echo call adt -package %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_XML%" %FILE_OR_DIR%
-call adt -package %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_XML%" %FILE_OR_DIR%)
+echo call adt -package %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_PACKAGE_XML%" %FILE_OR_DIR%
+call adt -package %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_PACKAGE_XML%" %FILE_OR_DIR%)
 
 if not "%PLATFORM%"=="desktop" (
-echo call adt -package -target %TYPE%%TARGET% %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%"
-call adt -package -target %TYPE%%TARGET% %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%")
+echo call adt -package -target %TYPE%%TARGET% %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_PACKAGE_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%"
+call adt -package -target %TYPE%%TARGET% %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_PACKAGE_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%")
 
 if errorlevel 1 goto failed
 goto set-up
