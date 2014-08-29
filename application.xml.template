@@ -2,7 +2,7 @@
 <application xmlns="http://ns.adobe.com/air/application/3.9">
   <id>me.rainssong.$(PROJECTNAME)</id>
   <versionNumber>1.0</versionNumber>
-  <supportedProfiles>extendedDesktop mobileDevice</supportedProfiles>
+  <supportedProfiles>mobileDevice extendedDesktop</supportedProfiles>
   <filename>$(PROJECTID)</filename>
   <name>
 		<text xml:lang="en">$(PROJECTNAME)</text>
@@ -73,6 +73,9 @@
 		<!--<image40x40>icons/Icon-40.png</image40x40>
 		<image80x80>icons/Icon-40@2x.png</image80x80>-->
   </icon>
+  <extensions>
+    <!-- <extensionID></extensionID> -->
+  </extensions>
   <!-- 
 	AIR options:
 	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413

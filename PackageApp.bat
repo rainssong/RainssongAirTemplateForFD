@@ -23,7 +23,8 @@ echo  [8] "ad-hoc"     (ipa-ad-hoc)
 echo  [9] App Store    (ipa-app-store)
 echo.
 echo Desktop:
-echo  [0] desktop      (air)
+echo  [e] desktop      (exe)
+echo  [b] desktop      (bundle)
 echo.
 
 :choice
@@ -35,9 +36,13 @@ set OPTIONS=
 if %C% GTR 3 set PLATFORM=ios
 if %C% GTR 7 set PLATFORM=ios-dist
 
-if "%C%"=="0" set TARGET=
-if "%C%"=="0" set OPTIONS=-tsa none
-if "%C%"=="0" set PLATFORM=desktop
+if "%C%"=="e" set TARGET=native
+if "%C%"=="e" set OPTIONS=-tsa none
+if "%C%"=="e" set PLATFORM=desktop
+
+if "%C%"=="b" set TARGET=bundle
+if "%C%"=="b" set OPTIONS=-tsa none
+if "%C%"=="b" set PLATFORM=desktop
 
 if "%C%"=="1" set TARGET=
 if "%C%"=="2" set TARGET=-debug

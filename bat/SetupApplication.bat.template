@@ -15,8 +15,8 @@ set AND_ICONS=icons/android
 set AND_SIGNING_OPTIONS=-storetype pkcs12 -keystore "%AND_CERT_FILE%" -storepass %AND_CERT_PASS%
 
 :: iOS packaging
-set IOS_DIST_CERT_FILE=cert\rainssongDis.p12
-set IOS_DEV_CERT_FILE=cert\rainssongDev.p12
+set IOS_DIST_CERT_FILE=cert\rainDis.p12
+set IOS_DEV_CERT_FILE=cert\rainDev.p12
 set IOS_DIST_CERT_PASS=123456
 set IOS_DEV_CERT_PASS=123456
 set IOS_DEV_PROVISION=cert\StarDev.mobileprovision
