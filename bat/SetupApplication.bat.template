@@ -56,9 +56,11 @@ set DIST_PATH=bin-release
 set DIST_NAME=$(PROJECTID)
 
 :: Debugging using a custom IP
-:: Debugging using a custom IP
-for /f "tokens=2 delims=:" %%i in ('ipconfig^|findstr "IP Address"') do (
-      for /f "delims=" %%i in ("%%i") do set DEBUG_IP=%%i
+for /f "tokens=2 delims=:" %%i in ('ipconfig^|findstr "IPv4"') do (
+      for /f "delims=" %%i in ("%%i") do (
+	  set DEBUG_IP=%%i
+	  goto end
+	  )
 )
 
 
