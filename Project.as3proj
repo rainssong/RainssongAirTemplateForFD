@@ -9,7 +9,7 @@
     <movie width="1024" />
     <movie height="748" />
     <movie version="3" />
-    <movie minorVersion="5" />
+    <movie minorVersion="9" />
     <movie platform="AIR Mobile" />
     <movie background="#FFFFFF" />
   </output>
@@ -20,9 +20,11 @@
   <!-- Build options -->
   <build>
     <option accessible="False" />
+    <option advancedTelemetry="False" />
     <option allowSourcePathOverlap="False" />
     <option benchmark="False" />
     <option es="False" />
+    <option inline="False" />
     <option locale="" />
     <option loadConfig="" />
     <option optimize="True" />
@@ -74,7 +76,7 @@
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
-    <!-- example: <hidden path="..." /> -->
+    <hidden path="obj" />
   </hiddenPaths>
   <!-- Executed before build -->
   <preBuildCommand>bat\UpdateResource.bat</preBuildCommand>
