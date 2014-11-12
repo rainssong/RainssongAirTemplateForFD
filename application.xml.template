@@ -46,6 +46,8 @@
 	<transparent>false</transparent>
     <aspectRatio>landscape</aspectRatio><!--landscape,portrait,any-->
     <autoOrients>true</autoOrients>
+    <!-- <width>640</width> -->
+    <!-- <height>960</height> -->
   </initialWindow>
   <icon>
 		<!--iphone ios6-->
