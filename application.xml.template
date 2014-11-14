@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/3.9">
+<application xmlns="http://ns.adobe.com/air/application/15.0">
   <id>me.rainssong.$(PROJECTNAME)</id>
   <versionNumber>1.0</versionNumber>
   <supportedProfiles>mobileDevice extendedDesktop</supportedProfiles>
@@ -9,30 +9,36 @@
 		<text xml:lang="zh_Hans">$(PROJECTNAME)</text>
 		<text xml:lang="zh_Hant">$(PROJECTNAME)</text>
   </name>
-  <copyright>wjypresents</copyright>
+  <copyright>rainssong</copyright>
   
   <android>
-    <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
-	<uses-permission android:name="android.permission.INTERNET" />
-	<uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch" />
-</manifest>]]></manifestAdditions>
+    <manifestAdditions><![CDATA[
+    	<manifest android:installLocation="auto">
+		<uses-permission android:name="android.permission.INTERNET" />
+		<uses-feature android:required="true" android:name="android.hardware.touchscreen.multitouch" />
+		</manifest>]]>
+	</manifestAdditions>
   </android>
   <iPhone>
-    <InfoAdditions><![CDATA[<key>UIStatusBarStyle</key>
-<string>UIStatusBarStyleBlackOpaque</string>
-<key>UIRequiresPersistentWiFi</key>
-<string>NO</string>
-<key>UIPrerenderedIcon</key>
-<false />
-<key>UIApplicationExitsOnSuspend</key>
-<false />
-<key>UIDeviceFamily</key>
-<array>
-	<!-- iPhone support -->
-	<string>1</string>
-	<!-- iPad support -->
-	<string>2</string>
-</array>]]></InfoAdditions>
+    <InfoAdditions><![CDATA[
+    	<key>UIStatusBarStyle</key>
+		<string>UIStatusBarStyleBlackOpaque</string>
+		<key>UIRequiresPersistentWiFi</key>
+		<string>NO</string>
+		<key>UIPrerenderedIcon</key>
+		<false />
+		<key>UIApplicationExitsOnSuspend</key>
+		<false />
+		<key>MinimumOSVersion</key>
+		<string>6.0</string>
+		<key>UIDeviceFamily</key>
+		<array>
+			<!-- iPhone support -->
+			<string>1</string>
+			<!-- iPad support -->
+			<string>2</string>
+		</array>]]>
+	</InfoAdditions>
     <requestedDisplayResolution>high</requestedDisplayResolution>
   </iPhone>
   <initialWindow>
