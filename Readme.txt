@@ -10,8 +10,11 @@
 6.自动卸载并安装生成的应用到device
 7.提供ClearUp.bat用来将src下的同步资源文件到bin
 8.附带本人的测试用provision和key文件（非开发机越狱后方可用）。
-9.支持打包exe和bundle
-10.自动获取IP
+9.自动获取IP
+10.自带各种apple终端测试入口
+11.可打包ios、android、windows安装包和绿色版。
+12.兼容桌面端和移动端
+13.调试xml和打包xml可分别设置（在SetupApplication.bat中）
 
 使用方法：
-将模板文件夹放到FlashDevelop\Projects\
+1.将模板文件夹放到FlashDevelop\Projects\
