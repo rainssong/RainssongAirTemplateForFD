@@ -1,5 +1,5 @@
 ﻿Rainsssong Air Mobile App Template
-===============
+=============
 Features:
 1.Sync files from \src to \bin
 2.Auto read appID from xml
@@ -18,7 +18,7 @@ Features:
 Useage:
 Copy to FlashDevelop\Projects\
 
-===============
+=============
 
 功能：
 1.自动复制src下的新资源文件到bin
