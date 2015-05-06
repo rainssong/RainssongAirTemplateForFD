@@ -13,7 +13,8 @@ Features:
 10.Add debug entry for each iOS devices
 11.Package as iOS, android, exe and bundle version
 12.Support desktop and mobile device
-13.You can set another application.xml for package（in SetupApplication.bat）
+13.You can set another application.xml for package（bat/SetupApplication.bat）
+14.directly open apllication storerage dictionary（bat/OpenStorageDirectory.bat）
 Useage:
 Copy to FlashDevelop\Projects\
 
@@ -32,5 +33,6 @@ Copy to FlashDevelop\Projects\
 11.可打包ios、android、windows安装包和绿色版。
 12.兼容桌面端和移动端
 13.调试xml和打包xml可分别设置（在SetupApplication.bat中）
+14.增加打开storage文件夹的快捷方式（bat/OpenStorageDirectory.bat）
 使用方法：
 将模板文件夹放到FlashDevelop\Projects\

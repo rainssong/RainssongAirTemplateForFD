@@ -73,6 +73,7 @@
 	<transparent>false</transparent>
     <aspectRatio>landscape</aspectRatio><!--landscape,portrait,any-->
     <autoOrients>true</autoOrients>
+    <resizable>false</resizable>
     <!-- <width>640</width> -->
     <!-- <height>960</height> -->
   </initialWindow>
