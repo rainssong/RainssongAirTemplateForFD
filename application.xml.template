@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/15.0">
+<application xmlns="http://ns.adobe.com/air/application/17.0">
   <id>me.rainssong.$(PROJECTNAME)</id>
   <versionNumber>1.0</versionNumber>
   <supportedProfiles>mobileDevice extendedDesktop</supportedProfiles>
@@ -78,32 +78,29 @@
     <!-- <height>960</height> -->
   </initialWindow>
   <icon>
-  		<!--desktop,not for bundle version-->
-		<!--<image16x16>icons/Icon-16.png</image16x16>
+  		<!--desktop-->
+		<!-- <image16x16>icons/Icon-16.png</image16x16>
 		<image32x32>icons/Icon-32.png</image32x32>
 		<image48x48>icons/Icon-48.png</image48x48>
-		<image128x128>icons/Icon-128.png</image128x128>-->
+		<image128x128>icons/Icon-128.png</image128x128> -->
+		
 		<!--iphone ios6-->
 		<image57x57>icons/Icon-57.png</image57x57>
 		<image114x114>icons/Icon-57@2x.png</image114x114>
 		<!--iphone ios7-->
 		<image120x120>icons/Icon-120.png</image120x120>
-
 		<!--ipad ios6-->
 		<image72x72>icons/Icon-72.png</image72x72>
 		<image144x144>icons/Icon-72@2x.png</image144x144>
 		<!--ipad ios7-->
 		<image76x76>icons/Icon-76.png</image76x76>
 		<image152x152>icons/Icon-76@2x.png</image152x152>
-
 		<!--setting recommanded-->
 		<!--<image29x29>icons/Icon-29.png</image29x29>
 		<image58x58>icons/Icon-29@2x.png</image58x58>-->
-
 		<!--spotlight ios6 recommanded-->
 		<!--<image50x50>icons/Icon-50.png</image50x50>
 		<image100x100>icons/Icon-50@2x.png</image100x100>-->
-
 		<!--spotlight ios7 recommanded-->
 		<!--<image40x40>icons/Icon-40.png</image40x40>
 		<image80x80>icons/Icon-40@2x.png</image80x80>-->

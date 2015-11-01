@@ -45,9 +45,10 @@ local.properties
 
 [Dd]ebug/
 [Rr]elease/
-bin
-bin-debug
-bin-release
+bin/
+bin-debug/
+bin-release/
+doc/
 x64/
 build/
 [Bb]in/

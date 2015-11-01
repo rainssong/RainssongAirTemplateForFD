@@ -8,7 +8,7 @@ package $(PackageName)$(CSLB){
 	import flash.ui.MultitouchInputMode;
 	
 	/**
-	$(CBI)* ...
+	$(CBI)* @date $(TimeStamp)
 	$(CBI)* @author $(DefaultUser)
 	$(CBI)*/
 	public class Main extends Sprite $(CSLB){
