@@ -13,5 +13,8 @@ if not exist "%ANDROID_SDK%\platform-tools" echo "ANDROID_SDK not set"
 goto succeed
 
 :succeed
-set PATH=%PATH%;%FLEX_SDK%\bin
+set PATH=%FLEX_SDK%\bin;%PATH%;
 set PATH=%PATH%;%ANDROID_SDK%\platform-tools
+
+echo AIR_VERSION
+call adt -version

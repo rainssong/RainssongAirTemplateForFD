@@ -32,9 +32,9 @@ set TYPE=ipa
 goto start
 
 :desktop-config
-set CERT_FILE=%AND_CERT_FILE%
-set SIGNING_OPTIONS=%AND_SIGNING_OPTIONS%
-set ICONS=%AND_ICONS%
+set CERT_FILE=%DES_CERT_FILE%
+set SIGNING_OPTIONS=%DES_SIGNING_OPTIONS%
+set ICONS=%DES_ICONS%
 set DIST_EXT=exe
 set TYPE=air
 goto start

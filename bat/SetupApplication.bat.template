@@ -9,10 +9,16 @@
 :: Android packaging
 set AND_CERT_NAME="$(PROJECTNAME)"
 set AND_CERT_PASS=fd
-set AND_CERT_FILE=cert\$(PROJECTID).p12
+set AND_CERT_FILE=cert\$(PROJECTID)-And.p12
 set AND_ICONS=icons/android
 
 set AND_SIGNING_OPTIONS=-storetype pkcs12 -keystore "%AND_CERT_FILE%" -storepass %AND_CERT_PASS%
+
+:: Desktop packaging
+set DES_CERT_FILE=cert\$(PROJECTID).p12
+set DES_ICONS=icons/des
+
+set DES_SIGNING_OPTIONS=-storetype pkcs12 -keystore "%DES_CERT_FILE%" -storepass %AND_CERT_PASS%
 
 :: iOS packaging
 set IOS_DEV_CERT_FILE=cert\rainDev.p12
@@ -29,7 +35,6 @@ set IOS_DIST_SIGNING_OPTIONS=-storetype pkcs12 -keystore "%IOS_DIST_CERT_FILE%" 
 :: Application descriptor
 set APP_XML=application.xml
 set APP_PACKAGE_XML=%APP_XML%
-
 
 :: Files to package
 set APP_DIR=bin
