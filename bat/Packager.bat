@@ -13,6 +13,7 @@ set SIGNING_OPTIONS=%AND_SIGNING_OPTIONS%
 set ICONS=%AND_ICONS%
 set DIST_EXT=apk
 set TYPE=apk
+set APP_XML=%APP_WIN_XML%
 goto start
 
 :ios-config
@@ -21,6 +22,7 @@ set SIGNING_OPTIONS=%IOS_DEV_SIGNING_OPTIONS%
 set ICONS=%IOS_ICONS%
 set DIST_EXT=ipa
 set TYPE=ipa
+set APP_XML=%APP_IOS_XML%
 goto start
 
 :ios-dist-config
@@ -29,6 +31,7 @@ set SIGNING_OPTIONS=%IOS_DIST_SIGNING_OPTIONS%
 set ICONS=%IOS_ICONS%
 set DIST_EXT=ipa
 set TYPE=ipa
+set APP_XML=%APP_IOS_XML%
 goto start
 
 :desktop-config
@@ -37,10 +40,26 @@ set SIGNING_OPTIONS=%DES_SIGNING_OPTIONS%
 set ICONS=%DES_ICONS%
 set DIST_EXT=exe
 set TYPE=air
+set APP_XML=%APP_WIN_XML%
 goto start
 
 
 :start
+:: Your application ID
+for /f "tokens=2 delims=>" %%i in ('findstr "<id>" %APP_XML%') do (
+	for /f "delims=<" %%i in ("%%i")do (
+		set APP_ID=%%i
+	)
+)
+
+:: Version
+for /f "tokens=2 delims=>" %%i in ('findstr "<versionNumber>" %APP_XML%') do (
+	for /f "delims=<" %%i in ("%%i")do (
+		set VERSION=%%i
+	)
+)
+
+
 if not exist "%CERT_FILE%" goto certificate
 :: Output file
 set EXTDIR=-extdir lib
@@ -51,12 +70,12 @@ echo Packaging: %OUTPUT%
 echo using certificate: %CERT_FILE%...
 echo.
 if "%PLATFORM%"=="desktop" (
-echo call adt -package %OPTIONS%  %SIGNING_OPTIONS% -target %TARGET%  "%OUTPUT%" "%APP_PACKAGE_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%"
-call adt -package %OPTIONS% %SIGNING_OPTIONS%  -target %TARGET%  "%OUTPUT%" "%APP_PACKAGE_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%")
+echo call adt -package %OPTIONS%  %SIGNING_OPTIONS% -target %TARGET%  "%OUTPUT%" "%APP_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%"
+call adt -package %OPTIONS% %SIGNING_OPTIONS%  -target %TARGET%  "%OUTPUT%" "%APP_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%")
 
 if not "%PLATFORM%"=="desktop" (
-echo call adt -package -target %TYPE%%TARGET% %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_PACKAGE_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%"
-call adt -package -target %TYPE%%TARGET% %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_PACKAGE_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%")
+echo call adt -package -target %TYPE%%TARGET% %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%"
+call adt -package -target %TYPE%%TARGET% %OPTIONS% %SIGNING_OPTIONS% "%OUTPUT%" "%APP_XML%" %FILE_OR_DIR% -extdir "%EXT_DIR%")
 
 if errorlevel 1 goto failed
 goto set-up

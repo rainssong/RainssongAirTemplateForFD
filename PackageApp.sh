@@ -1,0 +1,1 @@
+adt -package -storetype pkcs12 -keystore "cert/RainSelf.p12" -storepass fd -target bundle "bin-release/Zasa.app" "applicationMac.xml" -C bin .

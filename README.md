@@ -16,6 +16,8 @@ Rainsssong Air Mobile App Template
 13. You can set another application.xml for package（bat/SetupApplication.bat）
 14. directly open apllication storerage dictionary（bat/OpenStorageDirectory.bat）
 15. set SDK in bat/SetupApplication.bat or PATH
+16. Individual folder for each system (embed/)
+17. switch target system and sync resources（bat/SwitchTargetSystem.bat）
 
 ## Useage:
 * Copy to C:\Users\[username]\AppData\Local\FlashDevelop\Projects\
@@ -37,9 +39,11 @@ Rainsssong Air Mobile App Template
 13. 调试xml和打包xml可分别设置（在SetupApplication.bat中）
 14. 增加打开storage文件夹的快捷方式（bat/OpenStorageDirectory.bat）
 15. 可单独配置AirSDK（在SetupApplication.bat中）
+16. 针对不同系统提供了不同的资源文件夹 (embed/)
+17. 可以随时对资源文件夹进行切换（bat/SwitchTargetSystem.bat）
 
 ## 使用方法：
 * 将模板文件夹放到C:\Users\[username]\AppData\Local\FlashDevelop\Projects\
 
 ## Next:
-* Add applicationDesktop.xml，applicationMobile.xml
+* print compiler constants
