@@ -9,6 +9,8 @@
 		<text xml:lang="zh_Hans">$(PROJECTNAME)</text>
 		<text xml:lang="zh_Hant">$(PROJECTNAME)</text>
   </name>
+  <supportedLanguages>en de es fr it ja ko pt ru cs nl pl sv tr zh da nb iw</supportedLanguages>
+  <!--de:German pt:Portuguese cs:Czech nl:Dutch pl:Polish sv:Swedish tr:Turkish da:Danish-->
   <copyright>rainssong</copyright>
   
   <android>
@@ -65,6 +67,7 @@
 		</dict>
 		]]>
 	</InfoAdditions>
+	<!--<externalSwfs>assets/externalSwfs.txt</externalSwfs>-->
     <requestedDisplayResolution>high</requestedDisplayResolution>
   </iPhone>
   <initialWindow>
