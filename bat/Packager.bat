@@ -86,8 +86,8 @@ if "%PLATFORM%"=="ios" set PLAT=ios
 if "%PLATFORM%"=="ios-dist" set PLAT=ios
 if "%PLATFORM%"=="desktop" (start %OUTPUT%  
 goto end)
-echo uninstalling...
-call adt -uninstallApp -platform %PLAT% -appid %APP_ID%
+::echo uninstalling...
+::call adt -uninstallApp -platform %PLAT% -appid %APP_ID%
 echo installing...
 call adt -installApp -platform %PLAT% -package %OUTPUT%
 if "%PLAT%"=="android" (

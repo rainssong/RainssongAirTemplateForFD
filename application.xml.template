@@ -74,7 +74,7 @@
 	<title>$(PROJECTNAME)</title>
     <content>$(PROJECTID).swf</content>
     <visible>true</visible>
-    <fullScreen>false</fullScreen>
+    <fullScreen>true</fullScreen>
 	<renderMode>gpu</renderMode><!--cpu,gpu,direct-->
 	<!--<depthAndStencil>false</depthAndStencil>-->
     <systemChrome>standard</systemChrome><!--standard,none-->
