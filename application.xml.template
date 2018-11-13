@@ -67,6 +67,14 @@
 		</dict>
 		]]>
 	</InfoAdditions>
+	<Entitlements>
+		<![CDATA[ 
+			<!--TestFilight，不可以用于开发版-->
+			<!--<key>get-task-allow</key><false/>-->
+			<!--调试，不可以用于开发版-->
+			<!--<key>beta-reports-active</key><true/>-->
+		]]>
+	</Entitlements>
 	<!--<externalSwfs>assets/externalSwfs.txt</externalSwfs>-->
     <requestedDisplayResolution>high</requestedDisplayResolution>
   </iPhone>

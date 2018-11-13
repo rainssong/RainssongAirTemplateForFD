@@ -47,3 +47,6 @@ Rainsssong Air Mobile App Template
 
 ## Next:
 * print compiler constants
+* set device (Run.bat SetDevice.bat)
+* Custom package options (for different edition)
+* Auto check SDK version in xml、path、swf
